@@ -1,0 +1,5 @@
+POST http://localhost:8080/v1/api/archive
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzMyNjIwLCJleHAiOjE2ODUzMzQ0MjB9.BxWuVqjBBLp3qn32Qd0zMRH3iNsvFmmOfNfLBEEhFsk
+
+{ "title" : "Hello World Title", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }

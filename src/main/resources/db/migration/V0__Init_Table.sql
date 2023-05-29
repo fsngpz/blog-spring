@@ -11,11 +11,11 @@ CREATE TABLE IF NOT EXISTS authentication(
 
 -- archives --
 CREATE TABLE IF NOT EXISTS archives(
-    archive_id BIGSERIAL                                    NOT NULL
+    archive_id       BIGSERIAL                                    NOT NULL
         CONSTRAINT archives_pk
             PRIMARY KEY ,
-    title      text                                         NOT NULL,
-    body       text                                         NOT NULL,
-    author     text                                         NOT NULL,
-    created_at timestamp with time zone                     NOT NULL
+    title            text                                         NOT NULL,
+    body             text                                         NOT NULL,
+    published_by     text                                         NOT NULL,
+    published_at     timestamp with time zone                     NOT NULL
 );

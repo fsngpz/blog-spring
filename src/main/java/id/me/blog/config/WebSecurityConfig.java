@@ -40,8 +40,8 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/v1/api/**").permitAll()
-                                .requestMatchers("/v1/api/","/v1/api/**").authenticated()
+                        auth.requestMatchers("/v1/api/","/v1/api/auth/**").permitAll()
+                                .requestMatchers("/v1/api/**").authenticated()
                                 )
                 .sessionManagement(sess ->
                         sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
