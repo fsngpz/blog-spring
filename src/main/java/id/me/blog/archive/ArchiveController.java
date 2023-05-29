@@ -5,6 +5,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -22,11 +23,11 @@ public class ArchiveController {
 
     /**
      * handle request to create new {@link Archive}.
-     * @param request the {@link NewArchiveRequest} instance.
+     * @param request the {@link ArchiveRequest} instance.
      * @return the {@link NewArchiveResponse}.
      */
     @PostMapping
-    public NewArchiveResponse create(@RequestBody NewArchiveRequest request){
+    public NewArchiveResponse create(@RequestBody ArchiveRequest request){
         return this.archiveService.create(request);
     }
 
@@ -42,7 +43,15 @@ public class ArchiveController {
             throw new IllegalArgumentException("required value for 'id'");
         }
 
-        return this.archiveService.getArchive(id);
+        Archive archive = this.archiveService.getArchive(id);
+
+        return new ArchiveResponse(
+                archive.getTitle(),
+                archive.getBody(),
+                archive.getPublishedBy(),
+                archive.getPublishedAt(),
+                archive.getEditedBy(),
+                archive.getEditedAt());
     }
 
     /**
@@ -64,5 +73,36 @@ public class ArchiveController {
         Pageable pageable = PageRequest.of(pageIndex, pageSize, sort);
 
         return this.archiveService.getAllArchive(pageable);
+    }
+
+    /**
+     * handle request to delete the {@link Archive} by id.
+     * @param id the archive unique identifier.
+     */
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteById(@PathVariable Long id){
+        // -- if the 'id' is null then throw an exception --
+        if (id == null){
+            throw new IllegalArgumentException("required value for 'id'");
+        }
+
+        this.archiveService.deleteArchive(id);
+    }
+
+    /**
+     * handle request to update the {@link Archive}.
+     * @param id the archive unique identifier.
+     * @param request the {@link  ArchiveRequest} instance.
+     * @return the {@link ArchiveResponse} instance.
+     */
+    @PutMapping("/{id}")
+    public ArchiveResponse update(@PathVariable Long id, @RequestBody ArchiveRequest request){
+        // -- if the 'id' is null then throw an exception --
+        if (id == null){
+            throw new IllegalArgumentException("required value for 'id'");
+        }
+
+        return this.archiveService.updateArchive(id, request);
     }
 }

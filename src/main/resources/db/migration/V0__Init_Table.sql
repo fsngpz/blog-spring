@@ -17,5 +17,7 @@ CREATE TABLE IF NOT EXISTS archives(
     title            text                                         NOT NULL,
     body             text                                         NOT NULL,
     published_by     text                                         NOT NULL,
-    published_at     timestamp with time zone                     NOT NULL
+    published_at     timestamp with time zone                     NOT NULL,
+    edited_by     text                                         NOT NULL,
+    edited_at     timestamp with time zone                     NOT NULL
 );

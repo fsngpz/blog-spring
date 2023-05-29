@@ -20,4 +20,6 @@ public class ArchiveResponse {
     private String body;
     private String publishedBy;
     private OffsetDateTime publishedAt;
+    private String editedBy;
+    private OffsetDateTime editedAt;
 }

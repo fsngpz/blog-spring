@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * The model class for new archive request.
+ * The model class for archive request.
  *
  * @author Ferdinand Sangap
  * @since 2023-05-29
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class NewArchiveRequest {
+public class ArchiveRequest {
     private String title;
     private String body;
     private String author;

@@ -32,4 +32,6 @@ public class Archive {
 
     private String publishedBy;
     private OffsetDateTime publishedAt;
+    private String editedBy;
+    private OffsetDateTime editedAt;
 }

@@ -1,3 +1,147 @@
+GET http://localhost:8080/v1/api/archive/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T011217.200.json
+
+###
+
+PUT http://localhost:8080/v1/api/archive/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Content-Length: 97
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "Hello World", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "Shaggy Dog" }
+
+<> 2023-05-30T011211.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T011207.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T011053.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T011037.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T011010.404.json
+
+###
+
+DELETE http://localhost:8080/v1/api/archive/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/v1/api/archive/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T011002.200.json
+
+###
+
+POST http://localhost:8080/v1/api/archive
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Content-Length: 98
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "Hello World Dogs", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
+
+<> 2023-05-30T010938.200.json
+
+###
+
+POST http://localhost:8080/v1/api/archive
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Content-Length: 93
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "Shaggy Dogs", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
+
+<> 2023-05-30T010934.200.json
+
+###
+
+POST http://localhost:8080/v1/api/archive
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Content-Length: 90
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "The Dogs", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
+
+<> 2023-05-30T010930.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T010921.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-30T010801.200.json
+
+###
+
 GET http://localhost:8080/v1/api/archive/1
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
 Connection: Keep-Alive
@@ -396,151 +540,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 { "username" : "user", "password": "user1234" }
 
 <> 2023-05-29T100635.401.json
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user1234" }
-
-<> 2023-05-29T100518.500.json
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user1234" }
-
-<> 2023-05-29T100427.401.json
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user1234" }
-
-<> 2023-05-29T100339.500.json
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-<> 2023-05-27T210030.200.json
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-05-27T205121.200.txt
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
 
 ###
 

@@ -22,10 +22,10 @@ public class ArchiveService {
 
     /**
      * function to handle interaction create new {@link Archive}.
-     * @param request the {@link NewArchiveRequest} body.
+     * @param request the {@link ArchiveRequest} body.
      * @return the {@link NewArchiveResponse} instance.
      */
-    public NewArchiveResponse create(NewArchiveRequest request){
+    public NewArchiveResponse create(ArchiveRequest request){
         // -- validate the field 'body' is  not empty or blank --
         if (request.getBody().isBlank() || request.getBody().isEmpty()){
             throw new IllegalArgumentException("the field 'body' cannot be blank or empty");
@@ -40,10 +40,12 @@ public class ArchiveService {
         if (request.getAuthor().isBlank() || request.getAuthor().isEmpty()){
             throw new IllegalArgumentException("the field 'author' cannot be blank or empty");
         }
-        
+
         Archive archive = new Archive(null,
                                         request.getTitle(),
                                         request.getBody(),
+                                        request.getAuthor(),
+                                        OffsetDateTime.now(),
                                         request.getAuthor(),
                                         OffsetDateTime.now());
 
@@ -61,15 +63,14 @@ public class ArchiveService {
     /**
      * function to handle interaction to get the {@link Archive} by id.
      * @param id the archive unique identifier.
-     * @return the {@link ArchiveResponse} instance.
+     * @return the {@link Archive} instance.
      */
-    public ArchiveResponse getArchive(Long id){
+    public Archive getArchive(Long id){
         // -- find the archive by id, if not found then throw an exception --
-        Archive archive = this.archiveRepository.findById(id).orElseThrow(
+        return this.archiveRepository.findById(id).orElseThrow(
                 () -> new ArchiveNotFoundException(
                         String.format("no archive was found with id '%s'", id)));
 
-        return this.toResponse(archive);
     }
 
     /**
@@ -83,6 +84,40 @@ public class ArchiveService {
     }
 
     /**
+     * function to handle the interaction to delete the archive.
+     * @param id the Archive unique identifier.
+     */
+    public void deleteArchive(Long id){
+        // -- find the archive by id, if not found then throw an exception --
+        Archive archive = this.getArchive(id);
+
+        // -- delete the Archive from database --
+        this.archiveRepository.delete(archive);
+    }
+
+    /**
+     * function to handle interaction to update the existing archive.
+     * @param id the archive unique identifier.
+     * @param request the {@link  ArchiveRequest}.
+     * @return the {@link ArchiveResponse}.
+     */
+    public ArchiveResponse updateArchive(Long id, ArchiveRequest request){
+        // -- find the archive by id, if not found then throw an exception --
+        Archive archive = this.getArchive(id);
+
+        archive.setTitle(request.getTitle());
+        archive.setBody(request.getBody());
+        archive.setPublishedBy(request.getAuthor());
+        archive.setEditedBy(request.getAuthor());
+        archive.setEditedAt(OffsetDateTime.now());
+
+        // -- persist the edited archive --
+        this.archiveRepository.save(archive);
+
+        return this.toResponse(archive);
+    }
+
+    /**
      * private function to map the {@link Archive} to {@link ArchiveResponse}.
      * @param archive the {@link Archive} instance.
      * @return the {@link ArchiveResponse} instance.
@@ -92,6 +127,8 @@ public class ArchiveService {
                 archive.getTitle(),
                 archive.getBody(),
                 archive.getPublishedBy(),
-                archive.getPublishedAt());
+                archive.getPublishedAt(),
+                archive.getEditedBy(),
+                archive.getEditedAt());
     }
 }
