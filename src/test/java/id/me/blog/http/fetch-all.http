@@ -1,2 +1,2 @@
 GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NDE1OTUyLCJleHAiOjE2ODU0MTc3NTJ9._bPGQLO6Reqbmj_0n5l48o2yIUdI-0XCYAqW7KoJhVI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU2OTIyLCJleHAiOjE2ODU1NTg3MjJ9.QQtf7W0uoRPqrorp3sjCZZsa6oqiiR2P6NVpMLuqo1o

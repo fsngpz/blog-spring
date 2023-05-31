@@ -1,3 +1,154 @@
+POST http://localhost:8080/v1/api/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "username" : "user", "password": "user123" }
+
+<> 2023-06-01T012653.200.json
+
+###
+
+DELETE http://localhost:8080/v1/api/archive/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU3MTUzLCJleHAiOjE2ODU1NTg5NTN9.YeG3umUXpYrVIAR4QVvvx7KSsfxBPMzhkApzuBU43GI
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+DELETE http://localhost:8080/v1/api/archive/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU3MTUzLCJleHAiOjE2ODU1NTg5NTN9.YeG3umUXpYrVIAR4QVvvx7KSsfxBPMzhkApzuBU43GI
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-01T012028.404.json
+
+###
+
+PUT http://localhost:8080/v1/api/archive/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU3MTUzLCJleHAiOjE2ODU1NTg5NTN9.YeG3umUXpYrVIAR4QVvvx7KSsfxBPMzhkApzuBU43GI
+Content-Length: 97
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "Hello World", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "Shaggy Dog" }
+
+<> 2023-06-01T011923.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "username" : "user", "password": "user123" }
+
+<> 2023-06-01T011913.200.json
+
+###
+
+PUT http://localhost:8080/v1/api/archive/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Content-Length: 97
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "Hello World", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "Shaggy Dog" }
+
+###
+
+GET http://localhost:8080/v1/api/archive/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU2OTYxLCJleHAiOjE2ODU1NTg3NjF9.9sbxfeN4fjCnqANPNYuHAw3PcjbJdwApXDUgD4wcnVY
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-01T011614.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "username" : "user", "password": "user123" }
+
+<> 2023-06-01T011601.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU2OTIyLCJleHAiOjE2ODU1NTg3MjJ9.QQtf7W0uoRPqrorp3sjCZZsa6oqiiR2P6NVpMLuqo1o
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-01T011533.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "username" : "user", "password": "user123" }
+
+<> 2023-06-01T011522.200.json
+
+###
+
+GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NDE1OTUyLCJleHAiOjE2ODU0MTc3NTJ9._bPGQLO6Reqbmj_0n5l48o2yIUdI-0XCYAqW7KoJhVI
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/archive
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU0NzY2LCJleHAiOjE2ODU1NTY1NjZ9.UfUg7NNLObCiClXeCxHsZcBwrgZ1Xdxth4a-isjzdZg
+Content-Length: 98
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "title" : "Hello World Dogs", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
+
+<> 2023-06-01T003951.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "username" : "user", "password": "user123" }
+
+<> 2023-06-01T003926.200.json
+
+###
+
 GET http://localhost:8080/v1/api/archive?pageIndex=0&pageSize=10&sortBy=title&sortDirection=DESC
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NDE1OTUyLCJleHAiOjE2ODU0MTc3NTJ9._bPGQLO6Reqbmj_0n5l48o2yIUdI-0XCYAqW7KoJhVI
 Connection: Keep-Alive
@@ -402,138 +553,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-05-29T110000.200.txt
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-<> 2023-05-29T105918.200.json
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-POST http://localhost:8080/v1/api/archive
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzMyNjIwLCJleHAiOjE2ODUzMzQ0MjB9.BxWuVqjBBLp3qn32Qd0zMRH3iNsvFmmOfNfLBEEhFsk
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "title" : "Hello World Title", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user123" }
-
-<> 2023-05-29T105700.200.json
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user1234" }
-
-<> 2023-05-29T105654.401.json
-
-###
-
-POST http://localhost:8080/v1/api/archive
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "title" : "Hello World Title", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-GET http://localhost:8080/v1/api/
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-POST http://localhost:8080/v1/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "username" : "user", "password": "user1234" }
-
-<> 2023-05-29T105324.401.json
-
-###
-
-POST http://localhost:8080/v1/api/archive
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "title" : "Hello World Title", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
-
-###
-
-POST http://localhost:8080/v1/api/archive
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{ "title" : "Hello World Title", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "B Json" }
 
 ###
 

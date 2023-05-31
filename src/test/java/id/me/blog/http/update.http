@@ -1,5 +1,5 @@
 PUT http://localhost:8080/v1/api/archive/3
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1MzgyNTA3LCJleHAiOjE2ODUzODQzMDd9.cM0bhu9bKCJudX1IVF65qvJIbeDCa7wolWQucNMWpxQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjg1NTU3MTUzLCJleHAiOjE2ODU1NTg5NTN9.YeG3umUXpYrVIAR4QVvvx7KSsfxBPMzhkApzuBU43GI
 
 { "title" : "Hello World", "body": "Lorem Ipsum, The Dogs Quick Brown", "author" : "Shaggy Dog" }
