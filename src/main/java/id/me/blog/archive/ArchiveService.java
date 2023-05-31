@@ -27,17 +27,17 @@ public class ArchiveService {
      */
     public NewArchiveResponse create(ArchiveRequest request){
         // -- validate the field 'body' is  not empty or blank --
-        if (request.getBody().isBlank() || request.getBody().isEmpty()){
+        if (request.getBody() == null || request.getBody().isBlank() || request.getBody().isEmpty()){
             throw new IllegalArgumentException("the field 'body' cannot be blank or empty");
         }
 
         // -- validate the field 'title' is  not empty or blank --
-        if (request.getTitle().isBlank() || request.getTitle().isEmpty()){
+        if (request.getTitle() == null || request.getTitle().isBlank() || request.getTitle().isEmpty()){
             throw new IllegalArgumentException("the field 'title' cannot be blank or empty");
         }
 
         // -- validate the field 'author' is  not empty or blank --
-        if (request.getAuthor().isBlank() || request.getAuthor().isEmpty()){
+        if (request.getAuthor() == null || request.getAuthor().isBlank() || request.getAuthor().isEmpty()){
             throw new IllegalArgumentException("the field 'author' cannot be blank or empty");
         }
 
