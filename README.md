@@ -197,14 +197,6 @@ password : user123
 ### Delete a Blog Post
 - Endpoint: DELETE `/v1/api/archive/id`
 - Authorization: `Bearer Token`
-- Request Body:
-
-```json
-{
-  "title": "Example Title",
-  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel sapien quam."
-}
-```
 
 - Response Body:
 ```
